@@ -98,5 +98,44 @@ flutter:
 ```
 중간 부분에 flutter: 하위항목에 폴더 등록, 해당 폴더에 있는 이미지 전부 사용가능 하다는 의미
   
-<img src="./img/img1.png>
+<img src="./img/img1.png">
 
+```
+MaterialApp(
+  home: Image.asset('assets/image1.png')
+)
+```
+
+### 네모박스 넣을 땐 Container()
+```
+MaterialApp(
+  home: Container()
+)
+```
+안보이는 것은 크기와 색상 때문...
+width, height 파라미터 사용
+width, height에는 정수, 실수 넣을 수 있고 단위는 적지 않는다.
+```
+MaterialApp(
+  home: Container(width : 50, height : 50, color: Colors.blue)
+)
+```
+좌표지정, 또는 기준을 잡아줄 때는  Center() 혹은 Align() 사용
+```
+MaterialApp(
+  home: Center( 
+    child: Container(width : 50, height : 50, color: Colors.blue) 
+  )
+)
+```
+
+### 위젯안에 위젯넣기
+```
+MaterialApp(
+  home: Container( 
+    child: Text('박스안 글자임ㅅㄱ')
+  )
+)
+```
+Container( Text() ) 이렇게 쓰는 것인데 그냥 넣으면 안되고
+child 라는 이름의 파라미터로 넣어야 함.
