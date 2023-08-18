@@ -85,3 +85,17 @@ MaterialApp(
 )
 ```
 아이콘 이름은 https://api.flutter.dev/flutter/material/Icons-class.html 여기서 찾으면 됨. 
+
+### 이미지 넣을 땐
+1. 프로젝트 내에 assets 폴더 만들고 이미지 파일 저장
+2. pubspec.yaml 파일을 찾음. 앱만드는데 필요한 파일과 라이브러리들을 기록하는 파일
+
+(pubspec.yaml 파일)
+```
+flutter:
+  assets:
+    - assets/ 
+```
+중간 부분에 flutter: 하위항목에 폴더 등록, 해당 폴더에 있는 이미지 전부 사용가능 하다는 의미
+
+
