@@ -133,7 +133,7 @@ MaterialApp(
 ```
 MaterialApp(
   home: Container( 
-    child: Text('박스안 글자임ㅅㄱ')
+    child: Text('박스안 글자')
   )
 )
 ```
